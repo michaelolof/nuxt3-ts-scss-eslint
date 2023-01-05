@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/essential",
+    "plugin:@typescript-eslint/recommended",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {
+    "vue/html-indent": ["error", 4, { "baseIndent": 1 }],
+    "indent": ["error", 4],
+    "eol-last": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"], // Require trailing comma only when using multiline objects, arrays etc. See https://eslint.org/docs/2.0.0/rules/brace-style#stroustrup
+    "semi": ["error", "always"],
+    "quotes": [2, "double"], // Strings should be double quotes per guidelines.
+    "brace-style": ["error", "1tbs"], // if else conditions will begin in a new line after curly braces. See https://eslint.org/docs/2.0.0/rules/brace-style#stroustrup
+    "space-before-function-paren": ["error", "never"] // Disallow space before function. See https://eslint.org/docs/rules/space-before-function-paren#never
+  }
+}
