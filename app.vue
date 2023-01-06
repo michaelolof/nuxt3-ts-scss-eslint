@@ -8,10 +8,10 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 function doing() {
-    return apiPuntr.get("ping");
+    return $api.base.get("ping");
 }
 
 </script>
